@@ -19,7 +19,7 @@ By default, sublime-commands doesn't add any shortcuts. You should add them to `
   - At the end of the file, it will swap the previous two characters (like macOS/emacs, unlike Sublime which does nothing)
   - At the beginning of the file, it will do nothing (like macOS/emacs, unlike Sublime which moves the cursor forward)
   - At the end of a line, it will swap the previous and next (linebreak) characters (like Sublime, unlike macOS/emacs which swap the previous two characters)
-  - At the beginning of a line, it will swap the previous (linebreak) and next characters (like Sublime and emacs, unlike macOS which does nothing)
+  - At the beginning of a line, it will swap the previous (linebreak) and next characters (like Sublime and macOS/emacs)
 - `extension.transpose` will, otherwise (i.e. if some selections aren't empty), transpose the selections, putting the contents of the first selection into the second, the second into the third, etc, and the last into the first. If there's only one selection, nothing will happen.
 - `extension.expandToLine` will expand all cursors/selections to the entire line (including the ending `\n`). Note that this puts the end of the selection on the next line, so repeated use will expand the selection downward.
 - `extension.splitIntoLines` will split a selection into lines, not including the linebreak. If every selection is already single-line, nothing happens. If a selection ends with a linebreak, the next line will not be included.
