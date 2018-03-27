@@ -21,7 +21,7 @@ By default, sublime-commands doesn't add any shortcuts. You should add them to `
   - At the end of a line, it will swap the previous and next (linebreak) characters (like Sublime, unlike macOS/emacs which swap the previous two characters)
   - At the beginning of a line, it will swap the previous (linebreak) and next characters (like Sublime and emacs, unlike macOS which does nothing)
 - `extension.transpose` will, otherwise (i.e. if some selections aren't empty), transpose the selections, putting the contents of the first selection into the second, the second into the third, etc, and the last into the first. If there's only one selection, nothing will happen.
-- `extension.expandToLine` will expand all cursors/selections to the entire line (including the ending `\n`). Note that this puts the end of the selection on the next line, so repeated use will increase the selection. VS Code doesn't support ending one selection at the same place another begins, so this can merge selections in situations where it wouldn't in Sublime Text.
+- `extension.expandToLine` will expand all cursors/selections to the entire line (including the ending `\n`). Note that this puts the end of the selection on the next line, so repeated use will expand the selection downward.
 - `extension.splitIntoLines` will split a selection into lines, not including the linebreak. If every selection is already single-line, nothing happens. If a selection ends with a linebreak, the next line will not be included.
 - `extension.joinLines` will, for all selected lines, replace the linebreak and surrounding whitespace with a single space. If a selection is empty (it's just a cursor), the cursor will be moved to right after the space.
 
